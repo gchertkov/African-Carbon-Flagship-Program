@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
     const stakeholderName = decodeURIComponent(urlParams.get('name'));
 
-    fetch('https://script.google.com/macros/s/AKfycbwRjVbinYa2YzC7Uv5Lnr0ER8Jtg8kB9sLx07SnDDMmfQs7bFtLlaHhDRVOxXdbUfc/exec')
+    fetch('https://script.google.com/macros/s/AKfycbzQNhqthQNJDUCEcH7jTzfp0HBXYIBGkU3q2jD4D8G8B_mSLTBRMIxHGNfiqoWEX2w/exec')
         .then(response => response.json())
         .then(data => {
             populateNavigation(data); // Populate navigation with fetched data
